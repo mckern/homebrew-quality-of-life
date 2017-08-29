@@ -22,7 +22,7 @@ class Syn < Formula
 
   test do
     require "json"
-    json_blob = JSON.parse(shell_output(%Q(echo "that's a hell of a hat" | #{bin}/syn --conjunctions -f json")))
+    json_blob = JSON.parse(shell_output(%Q(echo "that's a hell of a hat" | #{bin}/syn --conjunctions -f json)))
 
     assert_equal json_blob["token"], "that"
   end
