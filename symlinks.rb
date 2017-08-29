@@ -11,11 +11,9 @@ class Symlinks < Formula
   end
 
   test do
-    # $ symlinks -d -v .
-    # dangling: /Users/mckern/Documents/Repositories/homebrew-quality-of-life/b -> a (reason: No such file or directory)
-    # deleted:  /Users/mckern/Documents/Repositories/homebrew-quality-of-life/b -> a
-
     ln_s "a", "b"
-    assert_match "b -> a (reason: No such file or directory)", shell_output("symlinks -d .")
+    
+    assert_match "b -> a (reason: No such file or directory)",
+      shell_output("#{bin}/symlinks -d .")
   end
 end
