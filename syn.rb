@@ -1,6 +1,6 @@
 class Syn < Formula
   desc "Syntax control for the command-line"
-  homepage "https://github.com/stephencelis/syn"
+  homepage "https://github.com/stephencelis/syn/"
 
   url "https://github.com/stephencelis/syn/archive/v0.2.2.tar.gz"
   sha256 "0f1fe9189104294934f901cadf7a90e03e890f09133b0388ac02e6a3893df223"

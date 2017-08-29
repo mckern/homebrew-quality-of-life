@@ -17,7 +17,7 @@ class Jdupes < Formula
     touch "a"
     touch "b"
 
-    dupes = shell_output("#{bin}/fdupes .").strip.split("\n").sort
+    dupes = shell_output("#{bin}/jdupes --zeromatch .").strip.split("\n").sort
     assert_equal ["./a", "./b"], dupes
   end
 end
