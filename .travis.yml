@@ -1,0 +1,25 @@
+---
+language: objective-c
+os: osx
+osx_image: xcode8.3
+rvm: system
+before_install:
+  - brew update
+notifications:
+  email: false
+cache:
+  directories:
+    - $HOME/.gem/ruby
+    - $HOME/Library/Caches/Homebrew/style
+    - $HOME/Library/Caches/Homebrew/tests
+env:
+  global:
+    - HOMEBREW_DEVELOPER="true"
+    - HOMEBREW_NO_EMOJI="true"
+    - HOMEBREW_VERBOSE="true"
+script:
+  - for formula in *.rb; do
+      brew install "${formula}" || brew install --HEAD "${formula}";
+    done
+  - brew audit ./*.rb || true
+  - brew test ./*.rb || true
