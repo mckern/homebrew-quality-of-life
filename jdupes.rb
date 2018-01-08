@@ -18,7 +18,7 @@ class Jdupes < Formula
     touch "b"
     (testpath/"c").write("unique file")
 
-    dupes = shell_output("#{bin}/jdupes --zeromatch .").strip.split("\n").sort
+    dupes = shell_output("#{bin}/jdupes --zeromatch .").split("\n")
 
     assert_equal ["./a", "./b"], dupes
     assert_equal dupes.include?("c"), false
