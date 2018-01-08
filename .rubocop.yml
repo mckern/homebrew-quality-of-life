@@ -1,0 +1,9 @@
+---
+AllCops:
+  TargetRubyVersion: 2.1
+
+Metrics/LineLength:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
