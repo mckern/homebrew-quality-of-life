@@ -1,5 +1,5 @@
 class Symlinks < Formula
-  desc "Fix, alter, manage symlinks."
+  desc "Fix, alter, manage symlinks"
   homepage "https://github.com/cometsong/symlinks/"
 
   head "https://github.com/cometsong/symlinks.git"
@@ -12,7 +12,7 @@ class Symlinks < Formula
 
   test do
     ln_s "a", "b"
-    
+
     assert_match "b -> a (reason: No such file or directory)",
       shell_output("#{bin}/symlinks -d .")
   end
