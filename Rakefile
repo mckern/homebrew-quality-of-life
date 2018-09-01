@@ -7,6 +7,10 @@ branch = ENV["TRAVIS_BRANCH"] || "master"
 formulas = Dir.glob("**/*.rb")
 changed_formulas = `git diff --name-only #{branch}.. *.rb`.split("\n")
 
+task :default do
+  system "rake --tasks"
+end
+
 desc "test any Homebrew formulas that have changed and validate them"
 task check: ["test:changed", "validate:style"]
 
