@@ -2,8 +2,8 @@ class GoCompletion < Formula
   desc "Bash and Zsh completion for Go CLI"
   homepage "https://github.com/kura/go-bash-completion"
   url "https://github.com/kura/go-bash-completion.git",
-    :revision => "26c2a2314ea1d2acbe503f88d994080fae46641b"
-  version "26c2a231"
+    :revision => "c86abfa41d2df9eede3d45e98d278dc12c004a7e"
+  version "c86abfa4"
 
   head "https://github.com/kura/go-bash-completion.git"
 
