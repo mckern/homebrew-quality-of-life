@@ -3,7 +3,7 @@
 
 Some handy [Homebrew](https://brew.sh/) formulas for useful tools that may not be accepted upstream (either because they're based on forks or mirrors, or because they're not deemed to be notable enough).
 
-<!-- MarkdownTOC -->
+<!-- MarkdownTOC autolink="true" levels="2" -->
 
 - [What's provided?](#whats-provided)
 - [Usage](#usage)
@@ -16,13 +16,8 @@ Some handy [Homebrew](https://brew.sh/) formulas for useful tools that may not b
 ## What's provided?
 
 * [go-completion](https://github.com/kura/go-bash-completion): Bash and Zsh completion for `go` CLI
-* [jdupes](https://github.com/jbruchon/jdupes/): Powerful duplicate file finder; an enhanced fork of `fdupes`
 * [symlinks](https://github.com/cometsong/symlinks/): Fix, alter, manage symlinks with more refinement than `ln`
-    - This formula is currently head-only since it's a fork with patches that are missing from the [upstream source](https://github.com/brandt/symlinks); Install it by running
-        ```
-        $ brew install --HEAD symlinks
-        ```
-* [syn](https://github.com/stephencelis/syn): Natural language processing tool for plaintext
+* [yaml2json](https://github.com/bronze1man/yaml2json): Command-line tool to convert yaml to json
 
 ## Usage
 
