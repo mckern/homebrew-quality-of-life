@@ -1,33 +1,27 @@
-require "language/go"
-
 class Yaml2json < Formula
-  desc "command line tool convert from yaml to json"
+  desc "Command-line tool to convert yaml to json"
   homepage "https://github.com/bronze1man/yaml2json"
+
+  url "https://github.com/bronze1man/yaml2json.git",
+    :revision => "80f2764d2ec35464f8b88f9caaae520b2fdc3b88"
+  version "80f2764d"
+
   head "https://github.com/bronze1man/yaml2json.git"
 
   depends_on "go" => :build
 
-  go_resource "gopkg.in/yaml.v2" do
-    url "https://gopkg.in/yaml.v2.git",
-        :revision => "v2.2.1"
-  end
-
   def install
-    contents = Dir["*"]
-    gopath = buildpath/"gopath"
-    (gopath/"src/github.com/bronze1man/yaml2json").install contents
+    ENV["GOPATH"] = buildpath
+    dir = buildpath/"src/github.com/bronze1man/yaml2json"
+    dir.install buildpath.children
 
-    ENV["GOPATH"] = gopath
-
-    Language::Go.stage_deps resources, gopath/"src"
-
-    cd gopath/"src/github.com/bronze1man/yaml2json" do
-    system "go", "build", "-o", "yaml2json"
+    cd dir do
+      system "go", "build", "-o", "yaml2json"
       bin.install "yaml2json"
     end
   end
 
   test do
-    assert_equal %({"key":"cat"}), pipe_output("#{bin}/yaml2json", "key: cat", 0).chomp
+    assert_equal '{"key":"cat"}', pipe_output("#{bin}/yaml2json", "key: cat", 0).chomp
   end
 end
