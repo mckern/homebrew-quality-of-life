@@ -15,9 +15,10 @@ Some handy [Homebrew](https://brew.sh/) formulas for useful tools that may not b
 
 ## What's provided?
 
-* [go-completion](https://github.com/kura/go-bash-completion): Bash and Zsh completion for `go` CLI
+* [inverted-commas](https://github.com/mckern/inverted-commas/): Plaintext filter to strip smart quotes
+* [go-completion](https://github.com/kura/go-bash-completion/): Bash and Zsh completion for `go` CLI
 * [symlinks](https://github.com/cometsong/symlinks/): Fix, alter, manage symlinks with more refinement than `ln`
-* [yaml2json](https://github.com/bronze1man/yaml2json): Command-line tool to convert yaml to json
+* [yaml2json](https://github.com/bronze1man/yaml2json/): Command-line tool to convert yaml to json
 
 ## Usage
 
