@@ -18,4 +18,4 @@ before_install:
   - ln -s "$PWD" "$HOMEBREW_TAP_DIR"
 
 script:
-  - brew test-bot
+  - brew test-bot --skip-homebrew --no-bottle --fail-fast
