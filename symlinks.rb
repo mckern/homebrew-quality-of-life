@@ -2,6 +2,10 @@ class Symlinks < Formula
   desc "Fix, alter, manage symlinks"
   homepage "https://github.com/cometsong/symlinks/"
 
+  url "https://github.com/kura/go-bash-completion.git",
+    :revision => "4c01a15f8cc3de9bcb31e0cbabcbfb6af33b4aae"
+  version "4c01a15f"
+
   head "https://github.com/cometsong/symlinks.git"
 
   def install
