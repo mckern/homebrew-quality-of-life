@@ -6,8 +6,6 @@ class InvertedCommas < Formula
     :revision => "v0.0.3"
   version "0.0.3"
 
-  head "https://github.com/mckern/inverted-commas.git"
-
   depends_on "dep" => :build
   depends_on "go" => :build
 
