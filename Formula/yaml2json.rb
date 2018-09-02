@@ -3,7 +3,7 @@ class Yaml2json < Formula
   homepage "https://github.com/bronze1man/yaml2json"
 
   url "https://github.com/bronze1man/yaml2json.git",
-    :revision => "80f2764d2ec35464f8b88f9caaae520b2fdc3b88"
+      :revision => "80f2764d2ec35464f8b88f9caaae520b2fdc3b88"
   version "80f2764d"
 
   bottle :unneeded

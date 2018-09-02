@@ -3,7 +3,7 @@ class InvertedCommas < Formula
   homepage "https://github.com/mckern/inverted-commas"
 
   url "https://github.com/mckern/inverted-commas.git",
-    :revision => "v0.0.3"
+      :revision => "v0.0.3"
   version "0.0.3"
 
   bottle :unneeded
