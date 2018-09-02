@@ -6,7 +6,7 @@ class Yaml2json < Formula
     :revision => "80f2764d2ec35464f8b88f9caaae520b2fdc3b88"
   version "80f2764d"
 
-  head "https://github.com/bronze1man/yaml2json.git"
+  bottle :unneeded
 
   depends_on "go" => :build
 

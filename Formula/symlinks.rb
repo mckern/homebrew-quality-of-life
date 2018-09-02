@@ -6,7 +6,7 @@ class Symlinks < Formula
     :revision => "4c01a15f8cc3de9bcb31e0cbabcbfb6af33b4aae"
   version "4c01a15f"
 
-  head "https://github.com/cometsong/symlinks.git"
+  bottle :unneeded
 
   def install
     system "make", "PREFIX=#{prefix}"

@@ -6,6 +6,8 @@ class InvertedCommas < Formula
     :revision => "v0.0.3"
   version "0.0.3"
 
+  bottle :unneeded
+
   depends_on "dep" => :build
   depends_on "go" => :build
 

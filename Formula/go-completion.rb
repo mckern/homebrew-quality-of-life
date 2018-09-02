@@ -5,8 +5,6 @@ class GoCompletion < Formula
     :revision => "c86abfa41d2df9eede3d45e98d278dc12c004a7e"
   version "c86abfa4"
 
-  head "https://github.com/kura/go-bash-completion.git"
-
   bottle :unneeded
 
   def install
